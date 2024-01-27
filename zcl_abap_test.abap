@@ -22,10 +22,17 @@ IF lt_dd27s[] IS NOT INITIAL.
                                  FOR ALL ENTRIES IN @lt_dd27s
                                  WHERE  view_name = @lt_dd27s-viewname.
 
-  DATA(lt_cdsview1) = VALUE lt_cdsview( FOR ls_dd27s  IN  lt_dd27s
-                      FOR ls_cds IN lt_cds FROM line_index( lt_cds[ view_name = ls_dd27s-viewname ] )
-                      WHERE ( view_name = ls_dd27s-viewname )
-                      LET ls_final      = VALUE ty_cdsview(
+  DATA(lt_cdsview1) = VALUE lt_cdsview( 
+												
+												FOR ls_dd27s  IN lt_dd27s
+												FOR ls_cds    IN lt_cds 
+															
+													FROM line_index
+																( lt_cds[ view_name = ls_dd27s-viewname ] )
+	                      
+													WHERE ( view_name = ls_dd27s-viewname )
+                      
+											LET ls_final      = VALUE ty_cdsview(
                           table         = ls_dd27s-tabname
                           cdsview       = ls_cds-ddls_name )
                       IN ( CORRESPONDING #( BASE ( ls_final ) ls_dd27s ) ) ).
