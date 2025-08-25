@@ -4,8 +4,8 @@
 
 *–––––––––––––––––––––––––––––––––––*
 
-- Interface Definitions
-  *–––––––––––––––––––––––––––––––––––*
+*Interface Definitions
+*–––––––––––––––––––––––––––––––––––*
 
 “ Main Asset Interface
 INTERFACE if_asset.
