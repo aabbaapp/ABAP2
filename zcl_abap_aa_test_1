@@ -28,6 +28,9 @@ START-OF-SELECTION.
       bwmod = 'Z001' x_amount = '2000.00' waers = 'USD' budat = sy-datum - 30 )
   ).
 
+arena dust deal initial install funny sunny retire vintage habit maximum salute
+Fftgz77 Fftgz77d8AAss
+
   " Az inicializált adatok kiírása
   WRITE: / '--- Értékcsökkenési tételek ---'.
   LOOP AT lt_depreciation_data INTO DATA(ls_entry).
