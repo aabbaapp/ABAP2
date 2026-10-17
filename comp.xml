@@ -1,0 +1,99 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<CompensationProposal>
+    <Header>
+        <CompensationID>COMP-20261017-0001</CompensationID>
+        <CompanyCode>1000</CompanyCode>
+        <RunDate>2026-10-17</RunDate>
+        <RunTime>21:20:00</RunTime>
+        <RunUser>ABAPUSER</RunUser>
+        <Status>PROPOSAL</Status>
+        <Direction>CUSTOMER_TO_VENDOR</Direction>
+        <Customer>
+            <CustomerID>100000</CustomerID>
+            <Name>Minta vevo Kft.</Name>
+        </Customer>
+        <Vendor>
+            <VendorID>200000</VendorID>
+            <Name>Minta szallito Kft.</Name>
+        </Vendor>
+        <Currency>HUF</Currency>
+    </Header>
+
+    <CustomerItems>
+        <Item>
+            <ItemNo>000001</ItemNo>
+            <CompanyCode>1000</CompanyCode>
+            <DocumentNumber>1900000123</DocumentNumber>
+            <FiscalYear>2026</FiscalYear>
+            <LineItem>001</LineItem>
+            <DocumentDate>2026-09-01</DocumentDate>
+            <PostingDate>2026-09-01</PostingDate>
+            <Reference>VEVO-2026-001</Reference>
+            <Text>Vevoszamla 1</Text>
+            <DebitCredit>S</DebitCredit>
+            <Amount currency="HUF">150000.00</Amount>
+        </Item>
+        <Item>
+            <ItemNo>000002</ItemNo>
+            <CompanyCode>1000</CompanyCode>
+            <DocumentNumber>1900000124</DocumentNumber>
+            <FiscalYear>2026</FiscalYear>
+            <LineItem>001</LineItem>
+            <DocumentDate>2026-09-05</DocumentDate>
+            <PostingDate>2026-09-05</PostingDate>
+            <Reference>VEVO-2026-002</Reference>
+            <Text>Vevoszamla 2</Text>
+            <DebitCredit>S</DebitCredit>
+            <Amount currency="HUF">100000.00</Amount>
+        </Item>
+    </CustomerItems>
+
+    <VendorItems>
+        <Item>
+            <ItemNo>000001</ItemNo>
+            <CompanyCode>1000</CompanyCode>
+            <DocumentNumber>1600000456</DocumentNumber>
+            <FiscalYear>2026</FiscalYear>
+            <LineItem>001</LineItem>
+            <DocumentDate>2026-09-03</DocumentDate>
+            <PostingDate>2026-09-03</PostingDate>
+            <Reference>SZALL-2026-010</Reference>
+            <Text>Szallitoszamla 1</Text>
+            <DebitCredit>H</DebitCredit>
+            <Amount currency="HUF">200000.00</Amount>
+        </Item>
+        <Item>
+            <ItemNo>000002</ItemNo>
+            <CompanyCode>1000</CompanyCode>
+            <DocumentNumber>1600000457</DocumentNumber>
+            <FiscalYear>2026</FiscalYear>
+            <LineItem>001</LineItem>
+            <DocumentDate>2026-09-07</DocumentDate>
+            <PostingDate>2026-09-07</PostingDate>
+            <Reference>SZALL-2026-011</Reference>
+            <Text>Szallitoszamla 2</Text>
+            <DebitCredit>H</DebitCredit>
+            <Amount currency="HUF">50000.00</Amount>
+        </Item>
+    </VendorItems>
+
+    <Summary>
+        <CustomerTotal currency="HUF">250000.00</CustomerTotal>
+        <VendorTotal currency="HUF">250000.00</VendorTotal>
+        <Difference currency="HUF">0.00</Difference>
+        <Balanced>true</Balanced>
+    </Summary>
+
+    <Accounting>
+        <Posted>false</Posted>
+        <CompanyCode></CompanyCode>
+        <FiscalYear></FiscalYear>
+        <DocumentNumber></DocumentNumber>
+    </Accounting>
+
+    <Email>
+        <Status>PENDING</Status>
+        <Recipient>penzugy@example.com</Recipient>
+    </Email>
+</CompensationProposal>
